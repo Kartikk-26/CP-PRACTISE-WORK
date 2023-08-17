@@ -16,14 +16,14 @@ int main()
     }
     printf("\n");
     for (i = 0; i < n; i++)
-    {
+    { 
         r1 = a[i] % 10;
         a[i] = a[i] / 10;
         b[i] = a[i];
         b[n + i] = r1;
     }
     printf("SORTED ARRAY BEFORE OUTPUT :\n");
-    for (i = 0; i < (2 * n); i++) // Changed loop condition here
+    for (i = 0; i < (2 * n); i++) 
     {
         printf("%d ", b[i]);
     }
@@ -43,7 +43,7 @@ int main()
     printf("PRINTING THE MAIN OUTPUT :\n");
     for (i = 0; i < (2 * n); i++)
     {
-        printf("%d ", b[i]);
+        printf("%d", b[i]);
     }
     return 0;
 }
